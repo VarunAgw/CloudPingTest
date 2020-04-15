@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+  <url>
+    <loc>https://cloudpingtest.com/</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://cloudpingtest.com/aws</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cloudpingtest.com/azure</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cloudpingtest.com/digital_ocean</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cloudpingtest.com/gcp</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cloudpingtest.com/linode</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cloudpingtest.com/oracle</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cloudpingtest.com/vultr</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://cloudpingtest.com/upcloud</loc>
+    <lastmod>2020-09-08T20:33:06+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
