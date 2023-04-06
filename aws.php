@@ -36,6 +36,10 @@ ob_start();
         code: "af-south-1"
     }, {
         text1: "Asia Pacific",
+        text2: "Melbourne",
+        code: "ap-southeast-4",
+    }, {
+        text1: "Asia Pacific",
         text2: "Hong Kong",
         code: "ap-east-1"
     }, {
