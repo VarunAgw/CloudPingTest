@@ -36,10 +36,6 @@ ob_start();
         code: "af-south-1"
     }, {
         text1: "Asia Pacific",
-        text2: "Melbourne",
-        code: "ap-southeast-4",
-    }, {
-        text1: "Asia Pacific",
         text2: "Hong Kong",
         code: "ap-east-1"
     }, {
@@ -50,6 +46,10 @@ ob_start();
         text1: "Asia Pacific",
         text2: "Jakarta",
         code: "ap-southeast-3"
+    }, {
+        text1: "Asia Pacific",
+        text2: "Melbourne",
+        code: "ap-southeast-4",
     }, {
         text1: "Asia Pacific",
         text2: "Mumbai",
@@ -122,14 +122,14 @@ ob_start();
         text1: "South America",
         text2: "São Paulo",
         code: "sa-east-1"
-        // }, {
-        //     text1: "AWS GovCloud",
-        //     text2: "US-East",
-        //     code: "us-gov-east-1"
-        // }, {
-        //     text1: "AWS GovCloud",
-        //     text2: "US",
-        //     code: "us-gov-west-1"
+        }, {
+            text1: "AWS GovCloud",
+            text2: "US-East",
+            code: "us-gov-east-1"
+        }, {
+            text1: "AWS GovCloud",
+            text2: "US",
+            code: "us-gov-west-1"
     }];
 </script>
 <?php

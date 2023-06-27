@@ -70,6 +70,11 @@ ob_start();
         text2: "Vint Hill",
         code: "us-ovh-vinthill",
         code2: "us-ovh-vinthill-01-10g"
+    }, {
+        text1: "India",
+        text2: "Mumbai",
+        code: "in-ovh-mumbai",
+        code2: "in-ovh-mumbai-01-10g-1"
     }];
 </script>
 <?php

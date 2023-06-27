@@ -1,4 +1,8 @@
 <?php
+
+http_response_code(404);
+die();
+
 require_once 'templating.php';
 $name = 'Digital Ocean';
 $longName = $name;

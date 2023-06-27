@@ -122,7 +122,7 @@ function contactLine()
 {
 	ob_start();
 	?>
-    <b>Missing your favourite cloud provider or a specific region?</b> Submit the <a target="_blank" href="https://github.com/VarunAgw/CloudPingTest/discussions">request here</a>.
+    <b>Missing your favourite cloud provider or a specific region?</b> Submit the <a target="_blank" href="https://github.com/VarunAgw/CloudPingTest/discussions?discussions_q=">request here</a>.
 <?php //    Also contact for <a href="https://varunagw.com/contact">freelancing projects</a>.
 ?>
     <br>
