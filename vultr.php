@@ -16,9 +16,25 @@ ob_start();
         }
 
         var regions = [{
+            text1: "Africa",
+            text2: "Johannesburg",
+            code: "jnb-za"
+        }, {
+            text1: "India",
+            text2: "Bangalore",
+            code: "blr-in"
+        }, {
+            text1: "India",
+            text2: "Delhi NCR",
+            code: "del-in"
+        }, {
             text1: "India",
             text2: "Mumbai",
             code: "bom-in"
+        }, {
+            text1: "South Korea",
+            text2: "Osaka",
+            code: "osk-jp"
         }, {
             text1: "South Korea",
             text2: "Seoul",
@@ -27,6 +43,10 @@ ob_start();
             text1: "Singapore",
             text2: "Singapore",
             code: "sgp"
+        }, {
+            text1: "Israel",
+            text2: "Tel Aviv",
+            code: "tlv-il"
         }, {
             text1: "Japan",
             text2: "Tokyo",
@@ -55,6 +75,10 @@ ob_start();
             text1: "Spain",
             text2: "Madrid",
             code: "mad-es"
+        }, {
+            text1: "United Kingdom",
+            text2: "Manchester",
+            code: "man-uk"
         }, {
             text1: "France",
             text2: "Paris",
@@ -111,6 +135,10 @@ ob_start();
             text1: "Canada",
             text2: "Toronto",
             code: "tor-ca"
+        }, {
+            text1: "Chile",
+            text2: "Santiago",
+            code: "scl-cl"
         }, {
             text1: "Brazil",
             text2: "São Paulo",
