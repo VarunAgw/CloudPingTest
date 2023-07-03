@@ -32,7 +32,7 @@ ob_start();
             text2: "Mumbai",
             code: "bom-in"
         }, {
-            text1: "South Korea",
+            text1: "Japan",
             text2: "Osaka",
             code: "osk-jp"
         }, {
