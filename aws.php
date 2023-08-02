@@ -119,6 +119,10 @@ ob_start();
         text2: "UAE",
         code: "me-central-1"
     }, {
+        text1: "Israel",
+        text2: "Tel Aviv",
+        code: "il-central-1"
+    }, {
         text1: "South America",
         text2: "São Paulo",
         code: "sa-east-1"
