@@ -111,6 +111,10 @@ ob_start();
         text2: "Zurich",
         code: "eu-central-2"
     }, {
+        text1: "Israel",
+        text2: "Tel Aviv",
+        code: "il-central-1"
+    }, {
         text1: "Middle East",
         text2: "Bahrain",
         code: "me-south-1"
@@ -119,21 +123,17 @@ ob_start();
         text2: "UAE",
         code: "me-central-1"
     }, {
-        text1: "Israel",
-        text2: "Tel Aviv",
-        code: "il-central-1"
-    }, {
         text1: "South America",
         text2: "São Paulo",
         code: "sa-east-1"
-        }, {
-            text1: "AWS GovCloud",
-            text2: "US-East",
-            code: "us-gov-east-1"
-        }, {
-            text1: "AWS GovCloud",
-            text2: "US",
-            code: "us-gov-west-1"
+    }, {
+        text1: "AWS GovCloud",
+        text2: "US-East",
+        code: "us-gov-east-1"
+    }, {
+        text1: "AWS GovCloud",
+        text2: "US",
+        code: "us-gov-west-1"
     }];
 </script>
 <?php
