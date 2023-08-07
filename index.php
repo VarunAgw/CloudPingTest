@@ -11,6 +11,7 @@ ob_start();
 <!--        <li><h2><a href="digital_ocean">Digital Ocean</a></h2>-->
 <!--        <li><h2><a href="dns">DNS</a></h2>-->
         <li><h2><a href="gcp">GCP (Google Cloud Platform)</a></h2>
+        <li><h2><a href="hetzner">Hetzner</a></h2>
         <li><h2><a href="linode">Linode</a></h2>
         <li><h2><a href="ngrok">ngrok</a></h2>
         <li><h2><a href="oracle">Oracle Cloud</a></h2>
