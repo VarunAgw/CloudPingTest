@@ -94,10 +94,10 @@ ob_start();
             text1: "Saudi Arabia West",
             text2: "Jeddah",
             code: "me-jeddah-1"
-        }, {
-            text1: "Serbia Central",
-            text2: "Jovanovac",
-            code: "eu-jovanovac-1"
+        // }, {
+        //     text1: "Serbia Central",
+        //     text2: "Jovanovac",
+        //     code: "eu-jovanovac-1"
         }, {
             text1: "Singapore",
             text2: "Singapore",
