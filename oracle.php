@@ -83,6 +83,10 @@ ob_start();
             text2: "Queretaro",
             code: "mx-queretaro-1"
         }, {
+            text1: "Mexico Northeast",
+            text2: "Monterrey",
+            code: "mx-monterrey-1"
+        }, {
             text1: "Netherlands Northwest",
             text2: "Amsterdam",
             code: "eu-amsterdam-1"
@@ -90,6 +94,10 @@ ob_start();
             text1: "Saudi Arabia West",
             text2: "Jeddah",
             code: "me-jeddah-1"
+        }, {
+            text1: "Serbia Central",
+            text2: "Jovanovac",
+            code: "eu-jovanovac-1"
         }, {
             text1: "Singapore",
             text2: "Singapore",
@@ -138,6 +146,10 @@ ob_start();
             text1: "US East",
             text2: "Ashburn",
             code: "us-ashburn-1"
+        }, {
+            text1: "US Midwest",
+            text2: "Chicago",
+            code: "us-chicago-1"
         }, {
             text1: "US West",
             text2: "Phoenix",
