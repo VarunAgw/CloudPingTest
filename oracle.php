@@ -39,9 +39,17 @@ ob_start();
             text2: "Toronto",
             code: "ca-toronto-1"
         }, {
-            text1: "Chile",
+            text1: "Chile Central",
             text2: "Santiago",
             code: "sa-santiago-1"
+        }, {
+            text1: "Chile West",
+            text2: "Valparaiso",
+            code: "sa-valparaiso-1"
+        }, {
+            text1: "Colombia Central",
+            text2: "Bogota",
+            code: "sa-bogota-1"
         }, {
             text1: "France Central",
             text2: "Paris",
@@ -94,11 +102,11 @@ ob_start();
             text1: "Saudi Arabia West",
             text2: "Jeddah",
             code: "me-jeddah-1"
-        // }, {
+        }, {
         //     text1: "Serbia Central",
         //     text2: "Jovanovac",
         //     code: "eu-jovanovac-1"
-        }, {
+        // }, {
             text1: "Singapore",
             text2: "Singapore",
             code: "ap-singapore-1"
