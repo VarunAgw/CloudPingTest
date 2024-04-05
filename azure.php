@@ -6,18 +6,14 @@ ob_start();
 ?>
 <script>
     function src(region_id) {
-        // https://www.azurespeed.com/Azure/Latency
         let cache_buster = "cache_buster=" + (+Date.now());
 
-        let code = regions[region_id].code2 || regions[region_id].code;
-        if (regions[region_id].code2) {
-            return `https://${code}.blob.core.windows.net/cb.json?${cache_buster}`;
-        } else {
-            return `https://s3${code}.blob.core.windows.net/public/latency-test.json?${cache_buster}`;
-        }
+        return `https://s3${regions[region_id].code}.blob.core.windows.net/public/latency-test.json?${cache_buster}`;
+        // https://www.azurespeed.com/Azure/Latency
     }
 
-    var regions = [{
+    let regions = [{
+    // Asia Pacific
         text1: "Australia",
         text2: "Australia Central",
         code: "australiacentral"
@@ -66,19 +62,52 @@ ob_start();
         text2: "West India",
         code: "westindia",
     }, {
-        text1: "Brazil",
-        text2: "Brazil South",
-        code: "brazilsouth"
+        // Europe
+        text1: "France",
+        text2: "France Central",
+        code: "francecentral"
     }, {
-        text1: "Canada",
-        text2: "Canada Central",
-        code: "canadacentral",
-        code2: "speedtestcac"
+        text1: "Germany",
+        text2: "Germany West Central",
+        code: "germanywestcentral"
     }, {
-        text1: "Canada",
-        text2: "Canada East",
-        code: "canadaeast"
+        text1: "Italy",
+        text2: "Italy North",
+        code: "italynorth"
     }, {
+        text1: "Europe",
+        text2: "North Europe",
+        code: "northeurope"
+    }, {
+        text1: "Norway",
+        text2: "Norway East",
+        code: "norwayeast"
+    }, {
+        text1: "Poland",
+        text2: "Poland Central",
+        code: "polandcentral",
+    }, {
+        text1: "Sweden",
+        text2: "Sweden Central",
+        code: "swedencentral"
+    }, {
+        text1: "Switzerland",
+        text2: "Switzerland North",
+        code: "switzerlandnorth"
+    }, {
+        text1: "United Kingdom",
+        text2: "UK South",
+        code: "uksouth"
+    }, {
+        text1: "United Kingdom",
+        text2: "UK West",
+        code: "ukwest"
+    }, {
+        text1: "Europe",
+        text2: "West Europe",
+        code: "westeurope"
+    }, {
+        // US
         text1: "United States",
         text2: "Central US",
         code: "centralus"
@@ -115,46 +144,10 @@ ob_start();
         text2: "West US 3",
         code: "westus3"
     }, {
-        text1: "France",
-        text2: "France Central",
-        code: "francecentral"
-    }, {
-        text1: "Germany",
-        text2: "Germany West Central",
-        code: "germanywestcentral"
-    }, {
-        text1: "Europe",
-        text2: "North Europe",
-        code: "northeurope"
-    }, {
-        text1: "Norway",
-        text2: "Norway East",
-        code: "norwayeast"
-    }, {
-        text1: "Poland",
-        text2: "Poland Central",
-        code: "polandcentral",
-        code2: "speedtestplc"
-    }, {
-        text1: "Sweden",
-        text2: "Sweden Central",
-        code: "swedencentral"
-    }, {
-        text1: "Switzerland",
-        text2: "Switzerland North",
-        code: "switzerlandnorth"
-    }, {
-        text1: "United Kingdom",
-        text2: "UK South",
-        code: "uksouth"
-    }, {
-        text1: "United Kingdom",
-        text2: "UK West",
-        code: "ukwest"
-    }, {
-        text1: "Europe",
-        text2: "West Europe",
-        code: "westeurope"
+        // Middle East
+        text1: "Israel",
+        text2: "Israel Central",
+        code: "israelcentral"
     }, {
         text1: "Qatar",
         text2: "Qatar Central",
@@ -162,35 +155,25 @@ ob_start();
     }, {
         text1: "United Arab Emirates",
         text2: "UAE North",
-        code: "uaenorth",
+        code: "uaenorth"
+    }, {
+        // Canada
+        text1: "Canada",
+        text2: "Canada Central",
+        code: "canadacentral",
+    }, {
+        text1: "Canada",
+        text2: "Canada East",
+        code: "canadaeast"
+    }, {
+        // South America
+        text1: "Brazil",
+        text2: "Brazil South",
+        code: "brazilsouth"
     }, {
         text1: "Africa",
         text2: "South Africa North",
         code: "southafricanorth"
-        // }, {
-        //     text1: "Brazil",
-        //     text2: "Brazil Southeast",
-        //     code: "brazilsoutheast"
-        // }, {
-        //     text1: "Germany",
-        //     text2: "Germany North",
-        //     code: "germanynorth"
-        // }, {
-        //     text1: "Switzerland",
-        //     text2: "Switzerland West",
-        //     code: "switzerlandwest"
-        // }, {
-        //     text1: "Norway",
-        //     text2: "Norway West",
-        //     code: "norwaywest"
-        // }, {
-        //     text1: "Africa",
-        //     text2: "South Africa West",
-        //     code: "southafricawest"
-        // }, {
-        //     text1: "United Arab Emirates",
-        //     text2: "UAE Central",
-        //     code: "uaecentral"
     }];
 </script>
 <?php

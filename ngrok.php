@@ -1,4 +1,8 @@
 <?php
+
+http_response_code(404);
+die();
+
 require_once 'templating.php';
 $name = 'ngrok';
 $longName = 'ngrok';
@@ -6,17 +10,12 @@ ob_start();
 ?>
 <script>
     function src(region_id) {
-        // GovCloud are https only regions
         let cache_buster = "cache_buster=" + (+Date.now());
 
-        let code = regions[region_id].code2 !== undefined ? regions[region_id].code2 : regions[region_id].code;
-        if (code.length > 0) {
-            code += ".";
-        }
-        return `https://ping.${code}ngrok.io/`;
+        return `https://ping.${regions[region_id].code}.ngrok.io/${cache_buster}`;
     }
 
-    var regions = [{
+    let regions = [{
         text1: "United States",
         text2: "",
         code: "us",

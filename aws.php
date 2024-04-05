@@ -6,15 +6,20 @@ ob_start();
 ?>
 <script>
     function src(region_id) {
-        // https://us-west-1.console.aws.amazon.com/console/home?region=us-west-1#
-        // GovCloud are https only regions
         let cache_buster = "cache_buster=" + (+Date.now());
 
         let code = regions[region_id].code;
         return `https://ec2.${code}.amazonaws.com/ping?${cache_buster}`;
     }
 
-    var regions = [{
+    // https://ec2.us-east-1.amazonaws.com/ping
+    // https://dynamodb.us-east-1.amazonaws.com/ping
+
+    // https://us-west-1.console.aws.amazon.com/console/home?region=us-west-1#
+    // GovCloud list
+    // https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
+
+    let regions = [{
         text1: "US East",
         text2: "N. Virginia",
         code: "us-east-1"
@@ -79,6 +84,10 @@ ob_start();
         text2: "Central",
         code: "ca-central-1"
     }, {
+        text1: "Canada",
+        text2: "Calgary",
+        code: "ca-west-1"
+    }, {
         text1: "Europe",
         text2: "Frankfurt",
         code: "eu-central-1"
@@ -111,10 +120,6 @@ ob_start();
         text2: "Zurich",
         code: "eu-central-2"
     }, {
-        text1: "Israel",
-        text2: "Tel Aviv",
-        code: "il-central-1"
-    }, {
         text1: "Middle East",
         text2: "Bahrain",
         code: "me-south-1"
@@ -126,6 +131,10 @@ ob_start();
         text1: "South America",
         text2: "São Paulo",
         code: "sa-east-1"
+    }, {
+        text1: "Israel",
+        text2: "Tel Aviv",
+        code: "il-central-1"
     }, {
         text1: "AWS GovCloud",
         text2: "US-East",

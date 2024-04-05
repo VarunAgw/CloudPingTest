@@ -6,16 +6,17 @@ ob_start();
 ?>
 <script>
     function src(region_id) {
-        // GovCloud are https only regions
         let cache_buster = "cache_buster=" + (+Date.now());
 
         let code = regions[region_id].code2 !== undefined ? regions[region_id].code2 : regions[region_id].code;
-        return `https://${code}.nperf.net/`;
+        return `https://${code}.nperf.net/${cache_buster}`;
     }
+
+    // https://s3.sbg.cloud.ovh.net/
 
     // https://ws.nperf.com/partner/frame?l=05d1f5db-f38f-42ed-924b-87e3b0f2d5b6
 
-    var regions = [{
+    let regions = [{
         text1: "France",
         text2: "Roubaix",
         code: "fr-ovh-roubaix",

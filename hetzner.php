@@ -4,38 +4,38 @@ $name = 'Hetzner';
 $longName = $name;
 ob_start();
 ?>
-    <script>
-        // https://docs.hetzner.com/cloud/general/locations/
+<script>
+    function src(region_id) {
+        let cache_buster = "cache_buster=" + (+Date.now());
 
-        function src(region_id) {
-            let cache_buster = "cache_buster=" + (+Date.now());
+        let code = regions[region_id].code;
+        return `https://${code}-speed.hetzner.com/?${cache_buster}`;
+    }
 
-            let code = regions[region_id].code;
-            return `https://${code}-speed.hetzner.com/`;
-        }
+    // https://docs.hetzner.com/cloud/general/locations/
 
-        var regions = [{
-            text1: "Germany",
-            text2: "Falkenstein",
-            code: "fsn1"
-        // }, {
-        //     text1: "Germany",
-        //     text2: "Nuremberg",
-        //     code: "nbg1"
-        }, {
-            text1: "Finland",
-            text2: "Helsinki",
-            code: "hel1"
-        }, {
-            text1: "United States",
-            text2: "Ashburn, VA",
-            code: "ash"
-        }, {
-            text1: "United States",
-            text2: "Hillsboro, OR",
-            code: "hil"
-        }];
-    </script>
+    let regions = [{
+        text1: "Germany",
+        text2: "Falkenstein",
+        code: "fsn1"
+    }, {
+        text1: "Germany",
+        text2: "Nuremberg",
+        code: "nbg1"
+    }, {
+        text1: "Finland",
+        text2: "Helsinki",
+        code: "hel1"
+    }, {
+        text1: "United States",
+        text2: "Ashburn, VA",
+        code: "ash"
+    }, {
+        text1: "United States",
+        text2: "Hillsboro, OR",
+        code: "hil"
+    }];
+</script>
 <?php
 $body = ob_get_clean();
 viewProvider();

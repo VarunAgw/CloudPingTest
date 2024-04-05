@@ -9,19 +9,26 @@ ob_start();
             let region = regions[region_id];
             let cache_buster = "cache_buster=" + (+Date.now());
 
-            let code = region.code2;
-            return "https://" + region.code + '-5tkroniexa-' + region.code2 + ".a.run.app/ping";
-            // let code = regions[region_id].codehar || regions[region_id].code;
-            // if (code === 'asia-south1' || code === 'europe-central2' || code === 'asia-south2') {
-            //     return `https://ch-${code}.storage.googleapis.com/probe/ping.js?${cache_buster}`;
-            // } else {
-            //     return `https://${code}-gce.cloudharmony.net/probe/ping.js?${cache_buster}`;
-            // }
+            var result = "https://" + region.code + '-5tkroniexa-' + region.code2 + `.a.run.app/api/ping?${cache_buster}`;
+            return result;
         }
 
+        // 404 is not a valid return. It's catch-all
+        // https://us-south1-5tkroniexa-vp.a.run.app/api/ping
+        // https://ch-africa-south1.storage.googleapis.com/probe/ping.js
+        // https://africa-south1-5tkroniexa-bq.a.run.app/api/ping
+        // https://africa-south1-5tkroniexa-bq.a.run.app/ping
+
+        // https://gcping.com/api/endpoints
         // https://cloud.google.com/compute/docs/regions-zones
         // https://github.com/GoogleCloudPlatform/gcping/blob/main/internal/config/endpoints.go
-        var regions = [{
+
+        let regions = [{
+            text1: "South Africa",
+            text2: "Johannesburg",
+            code: "africa-south1",
+            code2: "bq",
+        }, {
             text1: "Taiwan",
             text2: "Changhua County",
             code: "asia-east1",
@@ -97,6 +104,16 @@ ob_start();
             code: "europe-west1",
             code2: "ew",
         }, {
+            text1: "Germany",
+            text2: "Berlin",
+            code: "europe-west10",
+            code2: "oe",
+        }, {
+            text1: "Italy",
+            text2: "Turin",
+            code: "europe-west12",
+            code2: "og",
+        }, {
             text1: "UK",
             text2: "London",
             code: "europe-west2",
@@ -126,6 +143,16 @@ ob_start();
             text2: "Paris",
             code: "europe-west9",
             code2: "od",
+        }, {
+            text1: "Qatar",
+            text2: "Doha",
+            code: "me-central1",
+            code2: "ww",
+        }, {
+            text1: "Saudi Arabia",
+            text2: "Dammam",
+            code: "me-central2",
+            code2: "wx",
         }, {
             text1: "Israel",
             text2: "Tel Aviv",
@@ -185,7 +212,6 @@ ob_start();
             text1: "USA",
             text2: "California",
             code: "us-west2",
-            codehar: "us-west2-a",
             code2: "wl",
         }, {
             text1: "USA",
