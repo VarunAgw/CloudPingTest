@@ -21,6 +21,7 @@ ob_start();
         <li><h2><a href="ovhcloud">OVHCloud</a></h2>
 <!--        <li><h2><a href="upcloud">Upcloud</a></h2>-->
         <li><h2><a href="scaleway">Scaleway</a></h2>
+        <li><h2><a href="servers_com">servers.com</a></h2>
         <li><h2><a href="vultr">Vultr</a></h2>
     </ul>
 <?php
