@@ -34,6 +34,10 @@ ob_start();
         text1: "United States",
         text2: "Hillsboro, OR",
         code: "hil"
+    }, {
+        text1: "Singapore",
+        text2: "Singapore",
+        code: "sin"
     }];
 </script>
 <?php
