@@ -22,4 +22,5 @@ Compare ping (latency) for <a href="./">other cloud providers</a>.<br>
 <ul style="font-size: 32px;">
     <li>Brian Ruff</li>
     <li>Gabriel Tapias</li>
+    <li>Octavio Perez</li>
 </ul>
