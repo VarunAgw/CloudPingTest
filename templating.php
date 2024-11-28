@@ -173,8 +173,8 @@ function viewProvider()
     <br>
     <button style="font-size: 50px" disabled="disabled" onclick="">Stop That!</button>
 	<?= $body ?>
-    <link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="datatables.min.css">
+    <script type="text/javascript" charset="utf8" src="datatables.min.js"></script>
     <script type="text/javascript" charset="utf8" src="numString.js"></script>
     <script src="script.js"></script>
     </body>

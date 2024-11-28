@@ -7,6 +7,7 @@ $('button').click(function (e) {
     table = $("table").DataTable({
         "paging": false,
         "info": false,
+        "fixedHeader": true
     });
     if (e.ctrlKey || e.altKey || e.shiftKey) {
         window.open('https://www.youtube.com/watch?v=QB0Oc0GxB2E');
