@@ -9,7 +9,7 @@ ob_start();
         let cache_buster = "cache_buster=" + (+Date.now());
 
         let code = regions[region_id].code.toLowerCase();
-        return `https://http.speedtest.las1.coreweave.com/ping?${cache_buster}`;
+        return `https://http.speedtest.${code}.coreweave.com/ping?${cache_buster}`;
 
         // https://http.speedtest.ord1.coreweave.com/ping
 
