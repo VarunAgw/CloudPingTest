@@ -39,6 +39,9 @@ function __styles()
         .dataTables_wrapper .dataTables_filter {
             float: left !important;
         }
+        .dt-layout-cell.dt-layout-end {
+            margin-left: inherit !important;
+        }
     </style>
 	<?php
 	return ob_get_clean();
