@@ -28,3 +28,5 @@ ob_start();
 <?php
 $body = ob_get_clean();
 listProviders();
+
+require_once 'Footer.php';
