@@ -42,6 +42,32 @@ function __styles()
         .dt-layout-cell.dt-layout-end {
             margin-left: inherit !important;
         }
+        .container {
+            display: grid;
+            grid-template-columns: 0.3fr 0.3fr; /* Two equal columns */
+            gap: 20px; /* Space between sections */
+            margin-top: 20px;
+        }
+
+        .section {
+            border: 0px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            /*text-align: center;*/
+            padding-top: 0px;
+
+        }
+
+        .section h1 {
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-size: 25px;
+        }
     </style>
 	<?php
 	return ob_get_clean();
@@ -99,6 +125,22 @@ function __scripts()
 	return ob_get_clean();
 }
 
+function __footer()
+{
+    ob_start();
+    ?>
+    <footer style="position: relative; bottom: -10px; width: 100%; background-color: #f4f4f4;
+                padding: 10px 0; text-align: center; font-size: 14px; color: #555; box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); margin-top: 25px;">
+        <p>© 2025 <strong>CloudPingTest</strong>. All rights reserved.
+            <br><br>
+            Designed by <a href="https://systronlabs.com/" data-type="link" data-id="https://systronlabs.com/">Systron Labs</a>.
+            <a href="mailto:hello@systronlabs.com?subject=I want a free website consultation">Click here</a> for a free website consultation
+        </p>
+    </footer>
+    <?php
+    return ob_get_clean();
+}
+
 function listProviders()
 {
 	global $body;
@@ -116,6 +158,7 @@ function listProviders()
     <body>
     <h1>Test ping time (latency) for different cloud providers like AWS, Azure, GCP, Digital Ocean from your web browser.</h1>
 	<?= $body ?>
+    <?= __footer() ?>
     </body>
     </html>
 	<?php
@@ -128,7 +171,7 @@ function contactLine()
     <b>Missing your favourite cloud provider or a specific region?</b> Submit the <a target="_blank" href="https://github.com/VarunAgw/CloudPingTest/discussions?discussions_q=">request here</a>.
     <br>
     <br>
-    <b><a href="donations">Click here</a> to see the list of past donors. If you like the tool, <a href="https://linktr.ee/varunagw">consider donating :)</a></b>
+    <b><a href="contributors">Click here</a> to see the list of past donors and contributors. If you like the tool, <a href="https://linktr.ee/varunagw">consider donating :)</a></b>
     <br>
 <?php //    Also contact for <a href="https://varunagw.com/contact">freelancing projects</a>.
 ?>
@@ -180,6 +223,7 @@ function viewProvider()
     <script type="text/javascript" charset="utf8" src="datatables.min.js"></script>
     <script type="text/javascript" charset="utf8" src="numString.js"></script>
     <script src="script.js"></script>
+    <?= __footer() ?>
     </body>
     </html>
 	<?php
