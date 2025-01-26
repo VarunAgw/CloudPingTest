@@ -1,0 +1,55 @@
+<!-- favicon.svg -->
+<svg
+        version="1.1"
+        width="128"
+        height="128"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- Background with rounded corners -->
+    <rect
+            width="32"
+            height="32"
+            rx="6"
+            fill="#2196f3"
+    />
+
+    <!-- Cloud shape -->
+    <path
+            fill="#FFFFFF"
+            d="
+      M20.5 14
+      C19.67 11.67 17.58 10 15   10
+      C12.42 10    10.33 11.67 9.5  14
+      C7     14    5     16    5    18.5
+      C5     21    7     23    9.5  23
+      H22.5
+      C25    23    27    21    27   18.5
+      C27    16    25    14    22.5 14
+      H20.5
+      Z
+    "
+    />
+
+    <!-- "Ping" signal (circle + arcs) -->
+    <circle
+            cx="16"
+            cy="18"
+            r="1.5"
+            fill="#FFC107"
+    />
+    <path
+            fill="none"
+            stroke="#FFC107"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            d="M14 18 A2 2 0 0 1 18 18"
+    />
+    <path
+            fill="none"
+            stroke="#FFC107"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            d="M12 18 A4 4 0 0 1 20 18"
+    />
+</svg>
