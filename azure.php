@@ -7,8 +7,7 @@ ob_start();
 <script>
     function src(region_id) {
         let cache_buster = "cache_buster=" + (+Date.now());
-
-        return `https://s3${regions[region_id].code}.blob.core.windows.net/public/latency-test.json?${cache_buster}`;
+        return `https://s8${regions[region_id].code}.blob.core.windows.net/public/latency-test.json?${cache_buster}`;
         // https://www.azurespeed.com/Azure/Latency
     }
 
