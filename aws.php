@@ -53,6 +53,10 @@ ob_start();
         code: "ap-southeast-3"
     }, {
         text1: "Asia Pacific",
+        text2: "Malaysia",
+        code: "ap-southeast-5"
+    }, {
+        text1: "Asia Pacific",
         text2: "Melbourne",
         code: "ap-southeast-4",
     }, {
@@ -77,6 +81,14 @@ ob_start();
         code: "ap-southeast-2"
     }, {
         text1: "Asia Pacific",
+        text2: "Taipei",
+        code: "ap-east-2"
+    }, {
+        text1: "Asia Pacific",
+        text2: "Thailand",
+        code: "ap-southeast-7"
+    }, {
+        text1: "Asia Pacific",
         text2: "Tokyo",
         code: "ap-northeast-1"
     }, {
@@ -87,6 +99,10 @@ ob_start();
         text1: "Canada",
         text2: "Calgary",
         code: "ca-west-1"
+    }, {
+        text1: "Mexico",
+        text2: "Central",
+        code: "mx-central-1"
     }, {
         text1: "Europe",
         text2: "Frankfurt",
