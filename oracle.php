@@ -8,7 +8,13 @@ ob_start();
     function src(region_id) {
         let cache_buster = "cache_buster=" + (+Date.now());
 
-        return `https://objectstorage.${regions[region_id].code}.oraclecloud.com/ping${cache_buster}`;
+        if (regions[region_id].code == "eu-jovanovac-1") {
+            return `https://ocir.${regions[region_id].code}.oci.oraclecloud20.com/ping?${cache_buster}`;
+        } else {
+            return `https://objectstorage.${regions[region_id].code}.oraclecloud.com/ping?${cache_buster}`;
+        }
+
+
     }
 
     // https://objectstorage.ap-melbourne-1.oraclecloud.com/pingcache_buster=1712355967094
@@ -107,10 +113,10 @@ ob_start();
         text1: "Saudi Arabia West",
         text2: "Jeddah",
         code: "me-jeddah-1"
-    // }, {
-    //     text1: "Serbia Central",
-    //     text2: "Jovanovac",
-    //     code: "eu-jovanovac-1"
+    }, {
+        text1: "Serbia Central",
+        text2: "Jovanovac",
+        code: "eu-jovanovac-1"
     }, {
         text1: "Singapore",
         text2: "Singapore",
