@@ -187,7 +187,7 @@ ob_start();
             text1: "Chile",
             text2: "Santiago",
             code: "southamerica-west1",
-            code2: "rj",
+            code2: "tl",
         }, {
             text1: "USA",
             text2: "Iowa",
