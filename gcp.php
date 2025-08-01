@@ -94,6 +94,11 @@ ob_start();
             code: "europe-north1",
             code2: "lz",
         }, {
+            text1: "Sweden",
+            text2: "Stockholm",
+            code: "europe-north2",
+            code2: "ma",
+        }, {
             text1: "Spain",
             text2: "Madrid",
             code: "europe-southwest1",
@@ -168,6 +173,11 @@ ob_start();
             text2: "Toronto",
             code: "northamerica-northeast2",
             code2: "pd",
+        }, {
+            text1: "México",
+            text2: "Queretaro",
+            code: "northamerica-south1",
+            code2: "pv",
         }, {
             text1: "Brazil",
             text2: "São Paulo",
