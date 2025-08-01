@@ -33,6 +33,10 @@ ob_start();
         text2: "East Asia",
         code: "eastasia"
     }, {
+        text1: "Indonesia",
+        text2: "Indonesia Central",
+        code: "indonesiacentral"
+    }, {
         text1: "Japan",
         text2: "Japan East",
         code: "japaneast"
@@ -49,19 +53,31 @@ ob_start();
         text2: "Korea South",
         code: "koreasouth"
     }, {
-        text1: "Asia Pacific",
-        text2: "Southeast Asia",
-        code: "southeastasia"
+        text1: "Malaysia",
+        text2: "Malaysia West",
+        code: "malaysiawest"
+    }, {
+        text1: "New Zealand",
+        text2: "New Zealand North",
+        code: "newzealandnorth"
     }, {
         text1: "India",
         text2: "South India",
         code: "southindia"
+    }, {
+        text1: "Asia Pacific",
+        text2: "Southeast Asia",
+        code: "southeastasia"
     }, {
         text1: "India",
         text2: "West India",
         code: "westindia",
     }, {
         // Europe
+        text1: "Austria",
+        text2: "Austria East",
+        code: "austriaeast"
+    }, {
         text1: "France",
         text2: "France Central",
         code: "francecentral"
@@ -85,6 +101,10 @@ ob_start();
         text1: "Poland",
         text2: "Poland Central",
         code: "polandcentral",
+    }, {
+        text1: "Spain",
+        text2: "Spain Central",
+        code: "spaincentral",
     }, {
         text1: "Sweden",
         text2: "Sweden Central",
@@ -156,6 +176,15 @@ ob_start();
         text2: "UAE North",
         code: "uaenorth"
     }, {
+        // South America
+        text1: "Brazil",
+        text2: "Brazil South",
+        code: "brazilsouth"
+    }, {
+        text1: "Chile",
+        text2: "Chile Central",
+        code: "chilecentral"
+    }, {
         // Canada
         text1: "Canada",
         text2: "Canada Central",
@@ -165,11 +194,12 @@ ob_start();
         text2: "Canada East",
         code: "canadaeast"
     }, {
-        // South America
-        text1: "Brazil",
-        text2: "Brazil South",
-        code: "brazilsouth"
+        // Mexico
+        text1: "Mexico",
+        text2: "Mexico Central",
+        code: "mexicocentral",
     }, {
+        // Africa
         text1: "Africa",
         text2: "South Africa North",
         code: "southafricanorth"
