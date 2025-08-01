@@ -34,6 +34,7 @@ Compare ping (latency) for <a href="./">other cloud providers</a>.<br>
             <li>Brian Ruff</li>
             <li>Gabriel Tapias</li>
             <li>Octavio Perez</li>
+            <li>Przemysław Romanik</li>
         </ul>
     </div>
 </div>
