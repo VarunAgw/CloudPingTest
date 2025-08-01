@@ -53,6 +53,10 @@ ob_start();
         code: "ap-southeast-3"
     }, {
         text1: "Asia Pacific",
+        text2: "Malaysia",
+        code: "ap-southeast-5"
+    }, {
+        text1: "Asia Pacific",
         text2: "Melbourne",
         code: "ap-southeast-4",
     }, {
@@ -75,6 +79,14 @@ ob_start();
         text1: "Asia Pacific",
         text2: "Sydney",
         code: "ap-southeast-2"
+    }, {
+        text1: "Asia Pacific",
+        text2: "Taipei",
+        code: "ap-east-2"
+    }, {
+        text1: "Asia Pacific",
+        text2: "Thailand",
+        code: "ap-southeast-7"
     }, {
         text1: "Asia Pacific",
         text2: "Tokyo",
@@ -120,6 +132,10 @@ ob_start();
         text2: "Zurich",
         code: "eu-central-2"
     }, {
+        text1: "Mexico",
+        text2: "Central",
+        code: "mx-central-1"
+    }, {
         text1: "Middle East",
         text2: "Bahrain",
         code: "me-south-1"
@@ -128,13 +144,13 @@ ob_start();
         text2: "UAE",
         code: "me-central-1"
     }, {
-        text1: "South America",
-        text2: "São Paulo",
-        code: "sa-east-1"
-    }, {
         text1: "Israel",
         text2: "Tel Aviv",
         code: "il-central-1"
+    }, {
+        text1: "South America",
+        text2: "São Paulo",
+        code: "sa-east-1"
     }, {
         text1: "AWS GovCloud",
         text2: "US-East",
