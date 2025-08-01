@@ -110,6 +110,10 @@ ob_start();
         text2: "Amsterdam",
         code: "eu-amsterdam-1"
     }, {
+        text1: "Saudi Arabia Central",
+        text2: "Riyadh",
+        code: "me-riyadh-1"
+    }, {
         text1: "Saudi Arabia West",
         text2: "Jeddah",
         code: "me-jeddah-1"
