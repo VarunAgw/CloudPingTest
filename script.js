@@ -10,7 +10,7 @@ $('button').click(function (e) {
         "fixedHeader": true
     });
     if (e.ctrlKey || e.altKey || e.shiftKey) {
-        window.open('https://www.youtube.com/watch?v=QB0Oc0GxB2E');
+        // window.open('https://www.youtube.com/watch?v=QB0Oc0GxB2E');
     }
 })
 

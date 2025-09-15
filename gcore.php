@@ -23,21 +23,21 @@ ob_start();
     // }), null, 2)
 
     let regions = [
-        {
-            "text1": "Kazakhstan",
-            "text2": "Almaty",
-            "code": "kal"
-        },
+        // {
+        //     "text1": "Kazakhstan",
+        //     "text2": "Almaty",
+        //     "code": "kal"
+        // },
         {
             "text1": "Netherlands",
             "text2": "Amsterdam",
             "code": "am3"
         },
-        {
-            "text1": "Thailand",
-            "text2": "Bangkok",
-            "code": "tidc"
-        },
+        // {
+        //     "text1": "Thailand",
+        //     "text2": "Bangkok",
+        //     "code": "tidc"
+        // },
         {
             "text1": "Argentina",
             "text2": "Buenos Aires",
@@ -48,16 +48,16 @@ ob_start();
             "text2": "Cairo",
             "code": "teg"
         },
-        {
-            "text1": "UAE",
-            "text2": "Dubai",
-            "code": "eti"
-        },
-        {
-            "text1": "Germany",
-            "text2": "Frankfurt",
-            "code": "fr5"
-        },
+        // {
+        //     "text1": "UAE",
+        //     "text2": "Dubai",
+        //     "code": "eti"
+        // },
+        // {
+        //     "text1": "Germany",
+        //     "text2": "Frankfurt",
+        //     "code": "fr5"
+        // },
         {
             "text1": "Hong Kong",
             "text2": "Hong Kong",
@@ -88,11 +88,11 @@ ob_start();
             "text2": "Los Angeles",
             "code": "la2"
         },
-        {
-            "text1": "United States",
-            "text2": "Minneapolis",
-            "code": "min4"
-        },
+        // {
+        //     "text1": "United States",
+        //     "text2": "Minneapolis",
+        //     "code": "min4"
+        // },
         {
             "text1": "India",
             "text2": "Mumbai",

@@ -44,14 +44,14 @@ ob_start();
         text2: "Karlsruhe",
         code: "kae",
     }, {
-        text1: "Germany",
-        text2: "Nuremberg",
-        code: "nue",
-    }, {
-        text1: "Germany",
-        text2: "Munich",
-        code: "muc",
-    }, {
+    //     text1: "Germany",
+    //     text2: "Nuremberg",
+    //     code: "nue",
+    // }, {
+    //     text1: "Germany",
+    //     text2: "Munich",
+    //     code: "muc",
+    // }, {
         text1: "France",
         text2: "Lauterbourg",
         code: "ltg",

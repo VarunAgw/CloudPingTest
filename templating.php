@@ -199,6 +199,8 @@ function viewProvider()
 	<?= contactLine(); ?>
     Compare ping (latency) for <a href="./">other cloud providers</a>.<br>
     <br>
+    <button style="font-size: 50px" disabled="disabled" onclick="">Stop It!</button>
+    <br>
     <b>Note: Sorting will be enabled after you press Stop.</b>
     <table border=1 cellpadding=10 cellspacing=0 class="">
         <thead>
@@ -216,8 +218,6 @@ function viewProvider()
 
         </tbody>
     </table>
-    <br>
-    <button style="font-size: 50px" disabled="disabled" onclick="">Stop That!</button>
 	<?= $body ?>
     <link rel="stylesheet" type="text/css" href="datatables.min.css">
     <script type="text/javascript" charset="utf8" src="datatables.min.js"></script>

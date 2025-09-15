@@ -52,11 +52,11 @@ ob_start();
         code: "pl-ovh-warsaw",
         code2: "pl-ovh-warsaw-01-10g"
     }, {
-        text1: "Australia",
-        text2: "Sydney",
-        code: "au-ovh-sydney",
-        code2: "au-ovh-sydney-01-10g"
-    }, {
+    //     text1: "Australia",
+    //     text2: "Sydney",
+    //     code: "au-ovh-sydney",
+    //     code2: "au-ovh-sydney-01-10g"
+    // }, {
         text1: "Singapore",
         text2: "Singapore",
         code: "sg-ovh-singapore",
