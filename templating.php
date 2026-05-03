@@ -10,7 +10,7 @@ function __meta()
 	ob_start();
 	?>
     <link rel="canonical"
-          href="<?= "{$_SERVER['REQUEST_SCHEME']}://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}" ?>"/>
+          href="<?= ($_SERVER['REQUEST_SCHEME'] ?? 'http') . "://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}" ?>"/>
 
 	<?php
 	return ob_get_clean();

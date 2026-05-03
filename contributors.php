@@ -24,6 +24,7 @@ Compare ping (latency) for <a href="./">other cloud providers</a>.<br>
             <li>Patrick Hartman</li>
             <li>Curious George</li>
             <li>Paz Aricha</li>
+            <li>Daniel Rossouw</li>
         </ul>
     </div>
 
