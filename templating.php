@@ -201,7 +201,7 @@ function viewProvider()
     <br>
     <button style="font-size: 50px" disabled="disabled" onclick="">Stop It!</button>
     <br>
-    <b>Note: Sorting will be enabled after you press Stop.</b>
+    <b>Note: Sorting will be enabled after you press Stop. Click on Mean, Median, Min, or Max column headers to sort results.</b>
     <table border=1 cellpadding=10 cellspacing=0 class="">
         <thead>
         <tr class="heading">

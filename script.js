@@ -7,12 +7,27 @@ $('button').click(function (e) {
     table = $("table").DataTable({
         "paging": false,
         "info": false,
-        "fixedHeader": true
+        "fixedHeader": true,
+        "order": [[3, "asc"]], // Sort by Mean (column index 3) ascending by default
+        "columnDefs": [
+            {
+                "targets": [3, 4, 5, 6], // Mean, Median, Min, Max columns
+                "type": "num-fmt",
+                "orderDataType": "dom-data-latency"
+            }
+        ]
     });
     if (e.ctrlKey || e.altKey || e.shiftKey) {
         // window.open('https://www.youtube.com/watch?v=QB0Oc0GxB2E');
     }
 })
+
+// Custom sorting plugin to use data-latency attribute for sorting
+$.fn.dataTable.ext.order['dom-data-latency'] = function (settings, col) {
+    return this.api().column(col, {order: 'index'}).nodes().map(function (td, i) {
+        return $(td).data('latency') || 0;
+    });
+};
 
 regions.forEach(function (region, region_id) {
     var $tr = $('<tr>').addClass('region').attr('id', 'region_' + region_id).append([
