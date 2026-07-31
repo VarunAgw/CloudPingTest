@@ -2,7 +2,7 @@ var table;
 
 // A region that does not respond within this many ms counts as FAILED,
 // so one unreachable region cannot stall the whole run
-var PING_TIMEOUT = 5000;
+var PING_TIMEOUT = 3000;
 
 $('button').click(function (e) {
     window.stop_that = true;
