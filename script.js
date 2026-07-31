@@ -1,5 +1,9 @@
 var table;
 
+// A region that does not respond within this many ms counts as FAILED,
+// so one unreachable region cannot stall the whole run
+var PING_TIMEOUT = 5000;
+
 $('button').click(function (e) {
     window.stop_that = true;
     $('button').remove();
@@ -41,16 +45,45 @@ $(document).ready(function () {
 function ping_region(region_id, callback) {
     var startTime = Date.now();
     var image = new Image();
-    var a = function () {
-        var endTime = Date.now();
-        var timeElapsed = endTime - startTime;
+    var timeout_handle;
+    var finished = false;
+
+    var finish = function (reached) {
+        if (finished) {
+            return;
+        }
+        finished = true;
+        clearTimeout(timeout_handle);
+        image.onerror = image.onload = null;
+
+        // A timed out region reports 0, which is rendered as "FAILED"
+        var timeElapsed = reached ? Date.now() - startTime : 0;
 
         if (undefined !== callback) {
             callback(timeElapsed);
         }
     }
-    image.onerror = a;
-    image.onload = a;
+
+    // These endpoints answer with text/html or text/plain rather than an image,
+    // so onerror is the normal path here and both handlers mean "we got a reply".
+    // Do not be tempted to swap this for fetch(mode: "no-cors") to tell a dead
+    // region apart from a live one: Opaque Response Blocking rejects the promise
+    // for any html/xml/json reply, so every provider except the text/plain ones
+    // (aws, coreweave) would report FAILED for regions that are perfectly healthy.
+    image.onerror = function () {
+        finish(true);
+    };
+    image.onload = function () {
+        finish(true);
+    };
+
+    timeout_handle = setTimeout(function () {
+        finish(false);
+        // Drop the request so it stops holding a connection open
+        // for the remaining iterations
+        image.src = '';
+    }, PING_TIMEOUT);
+
     // console.log(src(region_id));
     image.src = src(region_id);
 }
@@ -80,14 +113,20 @@ function ping_regions(iteration_id, region_id) {
                 values.push(value);
             }
         });
-        $tr.find('td.region_mean').data('latency', stats.mean(values));
-        $tr.find('td.region_mean').html("<b>" + stats.mean(values).toFixed(0) + " ms</b>");
-        $tr.find('td.region_median').data('latency', stats.median(values));
-        $tr.find('td.region_median').html("<b>" + stats.median(values).toFixed(0) + " ms</b>");
-        $tr.find('td.region_lowest').data('latency', stats.lowest(values));
-        $tr.find('td.region_lowest').html("<b>" + stats.lowest(values).toFixed(0) + " ms</b>");
-        $tr.find('td.region_highest').data('latency', stats.highest(values));
-        $tr.find('td.region_highest').html("<b>" + stats.highest(values).toFixed(0) + " ms</b>");
+        if (0 === values.length) {
+            // Every test so far failed, so there is nothing to summarise yet;
+            // leaving the latency unset also keeps these cells out of the colouring
+            $tr.find('td.stats').removeData('latency').text("-");
+        } else {
+            var mean = stats.mean(values);
+            var median = stats.median(values);
+            var lowest = stats.lowest(values);
+            var highest = stats.highest(values);
+            $tr.find('td.region_mean').data('latency', mean).html("<b>" + mean.toFixed(0) + " ms</b>");
+            $tr.find('td.region_median').data('latency', median).html("<b>" + median.toFixed(0) + " ms</b>");
+            $tr.find('td.region_lowest').data('latency', lowest).html("<b>" + lowest.toFixed(0) + " ms</b>");
+            $tr.find('td.region_highest').data('latency', highest).html("<b>" + highest.toFixed(0) + " ms</b>");
+        }
 
         highlight_stats(['region_mean', 'region_median', 'region_lowest', 'region_highest', 'test_' + iteration_id]);
         region_id++;

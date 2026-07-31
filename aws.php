@@ -135,10 +135,10 @@ ob_start();
         text1: "Mexico",
         text2: "Central",
         code: "mx-central-1"
-    // }, {
-    //     text1: "Middle East",
-    //     text2: "Bahrain",
-    //     code: "me-south-1"
+    }, {
+        text1: "Middle East",
+        text2: "Bahrain",
+        code: "me-south-1"
     }, {
         text1: "Middle East",
         text2: "UAE",
