@@ -100,6 +100,10 @@ ob_start();
         text2: "Calgary",
         code: "ca-west-1"
     }, {
+        text1: "Mexico",
+        text2: "Central",
+        code: "mx-central-1"
+    }, {
         text1: "Europe",
         text2: "Frankfurt",
         code: "eu-central-1"
