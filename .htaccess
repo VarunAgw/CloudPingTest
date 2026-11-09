@@ -1,7 +1,12 @@
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [NC,L]
 
-Redirect 301 /aws.htm /aws
-Redirect 301 /digital_ocean.htm /digital_ocean
+# Homepage
+RewriteRule ^(?:index(?:\.php)?)?$ https://supertoolshq.com/network/cloud-ping/ [R=301,L]
+
+# Underscore pages -> hyphenated slugs on the new site
+RewriteRule ^digital_ocean(?:\.php|\.htm)?/?$ https://supertoolshq.com/network/cloud-ping/digital-ocean/ [R=301,L]
+RewriteRule ^ibm_cloud(?:\.php|\.htm)?/?$ https://supertoolshq.com/network/cloud-ping/ibm-cloud/ [R=301,L]
+RewriteRule ^servers_com(?:\.php|\.htm)?/?$ https://supertoolshq.com/network/cloud-ping/servers-com/ [R=301,L]
+
+# Everything else: /aws, /aws.php, /aws.htm -> /network/cloud-ping/aws/
+RewriteRule ^(.+?)(?:\.php|\.htm)?/?$ https://supertoolshq.com/network/cloud-ping/$1/ [R=301,L]
